@@ -4,126 +4,18 @@
     <meta charset="UTF-8">
     <title>綿綿冰</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            font-family: 'Noto Sans TC', sans-serif;
-            background-color: #faf3e0;
-            color: #333;
-            text-align: center;
-            padding: 50px;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            min-height: 100vh;
-        }
-
-        h1 {
-            font-size: 2rem; /* 減小標題大小 */
-            color: #4a4a4a;
-            margin-bottom: 10px;
-        }
-
-        h2 {
-            font-size: 1.2rem; /* 減小副標題大小 */
-            color: #5a5a5a;
-            margin-bottom: 30px;
-        }
-
-        .link-container {
-            display: flex;
-            flex-direction: column; /* 默認為垂直排列 */
-            justify-content: center;
-            align-items: center;
-            margin-top: 20px;
-            margin-bottom: 50px;
-        }
-
-        @media (min-width: 768px) {
-            .link-container {
-                flex-direction: row; /* 寬度超過768px時才改成橫向排列 */
-                justify-content: space-between;
-            }
-        }
-
-        .link-item {
-            flex: 1;
-            margin: 10px 0;
-            padding: 20px;
-            background-color: #ffffff;
-            border-radius: 15px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            width: 90%; /* 手機螢幕上元素寬度調整為90% */
-        }
-
-        @media (min-width: 768px) {
-            .link-item {
-                margin: 0 10px;
-                width: auto; /* 寬度超過768px時恢復原本自適應寬度 */
-            }
-        }
-
-        .link-item a {
-            display: block;
-            margin-bottom: 10px;
-            padding: 12px 24px;
-            background-color: #a3c4bc;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 25px;
-            font-size: 1.1rem;
-            transition: background-color 0.3s, transform 0.3s;
-        }
-
-        .link-item a:hover {
-            background-color: #8fb3aa;
-            transform: translateY(-2px);
-        }
-
-        .link-item img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-            margin-bottom: 15px;
-        }
-
-        .description {
-            font-size: 0.9rem; /* 減小文字大小 */
-            color: #6a6a6a;
-            line-height: 1.4;
-            margin-top: 10px;
-        }
-
-        footer {
-            font-size: 0.9rem;
-            color: #5a5a5a;
-            margin-top: 30px;
-        }
-
-        /* 日系風格的背景圖案 */
-        body::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-image: url('https://www.transparenttextures.com/patterns/groovepaper.png');
-            opacity: 0.1;
-            pointer-events: none;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css"> <!-- 連結外部CSS檔案 -->
 </head>
 <body>
     <h1>綿綿冰</h1>
-    <h2>普區休閒公會</h2>
+    <h2>楓之谷 普區30s無名村 休閒公會</h2>
 
     <div class="link-container">
         <div class="link-item">
             <img src="https://via.placeholder.com/300x200.png?text=Image+1" alt="Image 1">
             <a href="http://line.mmice.cc" target="_blank">匿名LINE社群</a>
             <div class="description">
-                日常聊天打屁、提醒喝水、揪團打王，活潑且富有隱私的匿名社群 密碼: 1126
+                日常聊天、提醒喝水、揪團打王，活潑且富有隱私的匿名社群 密碼: 1126
             </div>
         </div>
 
@@ -131,21 +23,120 @@
             <img src="https://via.placeholder.com/300x200.png?text=Image+2" alt="Image 2">
             <a href="http://DC.mmice.cc" target="_blank">Discord 群組</a>
             <div class="description">
-                語音聊天、改版資訊、我們的里程碑，最舒適的DC群
+                語音聊天、改版資訊、綿綿冰的里程碑，最舒適的DC群
             </div>
         </div>
 
         <div class="link-item">
             <img src="https://via.placeholder.com/300x200.png?text=Image+3" alt="Image 3">
-            <a href="http://list.mmice.cc" target="_blank">公會公開資訊</a>
+            <a href="http://list.mmice.cc" target="_blank">公開資訊</a>
             <div class="description">
-                公會成員總表、公會各項資訊，想了解更多就點開來看吧!
+                公會成員總表、各種公開資訊緩慢更新中，想了解更多就點開來看吧!
             </div>
         </div>
     </div>
 
+    <div class="about-us">
+        <img src="https://static.wikia.nocookie.net/mpstory/images/c/c0/Map_%E9%9B%A8%E9%9C%A7%E7%80%91%E5%B8%83.png/revision/latest/scale-to-width-down/600?cb=20201015084139&path-prefix=zh" alt="About Us Image">
+        <h3>關於我們</h3>
+        <p>綿綿冰是在普區30s無名村的休閒公會</p>
+		<p>在2022年底，由居欸米包、Cyannn、Toyamanao 共同創立的公會</p>
+		<p>綿綿冰旨在成為和諧穩定的公會，以及創立保有隱私的社群平台<p>
+		<p>我們以原則代替規則，不給成員們壓力~<p>
+		<p>沒有皇親國戚、沒有親友團，公會只有 管理員/成員，也避免一人獨裁，公會的重大事情都是管理群共同決策<p>
+		<p>公會有穩定的 每日AUT/每周王團/頂培團<p>
+		<p>也有熱鬧的公會頻/line社群/DC<p>
+		<p>如果你也認同我們，歡迎尋找會長副會申請加入唷!<p>
+    </div>
+
+    <div class="milestone">
+        <h3>里程碑</h3>
+        <div class="timeline">
+            <div class="timeline-item left">
+                <h4>2022/11/17</h4>
+                <p>綿綿冰，啟動</p>
+            </div>
+            <div class="timeline-item right">
+                <h4>2022/11/26</h4>
+                <p>Line社群創立</p>
+            </div>
+            <div class="timeline-item left">
+                <h4>2022/11/??</h4>
+                <p>綿綿冰進駐25s無名村</p>
+            </div>
+            <div class="timeline-item right">
+                <h4>2023/02/19</h4>
+                <p>DC群成立</p>
+            </div>
+            <div class="timeline-item left">
+                <h4>2023/02/20</h4>
+                <p>跨週第一時間名聲第一</p>
+            </div>
+            <div class="timeline-item right">
+                <h4>2023/02/23</h4>
+                <p>TNT政變取得綿綿冰會長之位</p>
+            </div>
+            <div class="timeline-item left">
+                <h4>2023/03/05</h4>
+                <p>綿綿冰25等</p>
+            </div>
+            <div class="timeline-item right">
+                <h4>2023/07/23</h4>
+                <p>第一次水道一萬分</p>
+            </div>		
+            <div class="timeline-item left">
+                <h4>2023/11/13</h4>
+                <p>綿綿冰會地改到30s無名村</p>
+            </div>
+            <div class="timeline-item right">
+                <h4>2024/01/29</h4>
+                <p>第一次三滿技</p>
+            </div>	
+            <div class="timeline-item left">
+                <h4>2024/04/20</h4>
+                <p>人數破180人 同時上線人數50人</p>
+				<p>同時上線人數50人</p>
+            </div>
+            <div class="timeline-item right">
+                <h4>2024/06/17</h4>
+                <p>同時上線人數60人</p>
+            </div>	
+            <div class="timeline-item left">
+                <h4>2024/06/29</h4>
+                <p>綿綿冰人數破195人</p>
+            </div>
+            <div class="timeline-item right">
+                <h4>2024/06/30</h4>
+                <p>錦錦冰啟動</p>
+            </div>	
+            <div class="timeline-item left">
+                <h4>2024/07/21</h4>
+                <p>綿綿冰30等</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="gallery">
+        <h3>圖集</h3>
+        <div class="gallery-row">
+            <img src="https://via.placeholder.com/150.png?text=Image+1" alt="Gallery Image 1">
+            <img src="https://via.placeholder.com/150.png?text=Image+2" alt="Gallery Image 2">
+            <img src="https://via.placeholder.com/150.png?text=Image+3" alt="Gallery Image 3">
+        </div>
+        <div class="gallery-row">
+            <img src="https://via.placeholder.com/150.png?text=Image+4" alt="Gallery Image 4">
+            <img src="https://via.placeholder.com/150.png?text=Image+5" alt="Gallery Image 5">
+            <img src="https://via.placeholder.com/150.png?text=Image+6" alt="Gallery Image 6">
+        </div>
+        <div class="gallery-row">
+            <img src="https://via.placeholder.com/150.png?text=Image+7" alt="Gallery Image 7">
+            <img src="https://via.placeholder.com/150.png?text=Image+8" alt="Gallery Image 8">
+            <img src="https://via.placeholder.com/150.png?text=Image+9" alt="Gallery Image 9">
+        </div>
+    </div>
+
     <footer>
-        綿綿冰製作
+        綿綿冰技術部製作  本網頁建議以PC瀏覽器觀看
     </footer>
 </body>
 </html>
