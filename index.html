@@ -2,56 +2,137 @@
 <html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
-    <title>楓之谷-綿綿冰 社群入口</title>
+    <title>綿綿冰</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+            font-family: 'Noto Sans TC', sans-serif;
+            background-color: #faf3e0;
+            color: #333;
             text-align: center;
             padding: 50px;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 100vh;
         }
 
         h1 {
-            color: #333;
+            font-size: 2.5rem;
+            color: #4a4a4a;
+            margin-bottom: 10px;
         }
 
-        .welcome-message {
-            font-size: 24px;
+        h2 {
+            font-size: 1.5rem;
+            color: #5a5a5a;
+            margin-bottom: 30px;
+        }
+
+        .link-container {
+            display: flex;
+            justify-content: space-between;
             margin-top: 20px;
-            opacity: 0;
-            transform: translateY(-20px);
-            animation: fadeInUp 2s ease forwards;
+            margin-bottom: 50px;
         }
 
-        @keyframes fadeInUp {
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+        .link-item {
+            flex: 1;
+            margin: 0 10px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
-        a {
-            display: inline-block;
-            margin: 10px;
-            padding: 10px 20px;
-            background-color: #5c92d1;
-            color: white;
+        .link-item a {
+            display: block;
+            margin-bottom: 10px;
+            padding: 12px 24px;
+            background-color: #a3c4bc;
+            color: #fff;
             text-decoration: none;
-            border-radius: 5px;
-            font-size: 20px;
-            transition: background-color 0.3s;
+            border-radius: 25px;
+            font-size: 1.2rem;
+            transition: background-color 0.3s, transform 0.3s;
         }
 
-        a:hover {
-            background-color: #3b6ea5;
+        .link-item a:hover {
+            background-color: #8fb3aa;
+            transform: translateY(-2px);
+        }
+
+        .link-item a:active {
+            transform: translateY(0);
+        }
+
+        .description {
+            font-size: 1rem;
+            color: #6a6a6a;
+            line-height: 1.5;
+            margin-top: 10px;
+        }
+
+        .link-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            font-size: 1rem;
+            color: #5a5a5a;
+            margin-top: 30px;
+        }
+
+        /* 日系風格的背景圖案 */
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('https://www.transparenttextures.com/patterns/groovepaper.png');
+            opacity: 0.1;
+            pointer-events: none;
         }
     </style>
 </head>
 <body>
-    <h1>楓之谷-綿綿冰 社群入口</h1>
-    <div class="welcome-message">歡迎加入綿綿冰!!</div>
-    <a href="http://line.mmice.cc" target="_blank">匿名line社群(密碼:1126)</a>
-    <a href="http://DC.mmice.cc" target="_blank">DC群</a>
-    <a href="http://list.mmice.cc" target="_blank">公開資訊</a>
+    <h1>綿綿冰</h1>
+    <h2>普區休閒公會</h2>
+
+    <div class="link-container">
+        <div class="link-item">
+            <img src="https://via.placeholder.com/300x200.png?text=Image+1" alt="Image 1">
+            <a href="http://line.mmice.cc" target="_blank">匿名LINE社群</a>
+            <div class="description">
+                日常聊天打屁、提醒喝水、揪團打王，活潑且富有隱私的匿名社群 密碼: 1126
+            </div>
+        </div>
+
+        <div class="link-item">
+            <img src="https://via.placeholder.com/300x200.png?text=Image+2" alt="Image 2">
+            <a href="http://DC.mmice.cc" target="_blank">Discord 群組</a>
+            <div class="description">
+                語音聊天、改版資訊、我們的里程碑，最舒適的DC群
+            </div>
+        </div>
+
+        <div class="link-item">
+            <img src="https://via.placeholder.com/300x200.png?text=Image+3" alt="Image 3">
+            <a href="http://list.mmice.cc" target="_blank">公會公開資訊</a>
+            <div class="description">
+                公會成員總表、公會各項資訊，想了解更多就點開來看吧!
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        綿綿冰製作
+    </footer>
 </body>
 </html>
+
