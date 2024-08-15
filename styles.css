@@ -22,6 +22,11 @@ h2 {
     color: #5a5a5a;
     margin-bottom: 30px;
 }
+h3 {
+    font-size: 1.2rem; /* 減小副標題大小 */
+    color: #5a5a5a;
+    margin-bottom: 30px;
+}
 
 .link-container {
     display: flex;
