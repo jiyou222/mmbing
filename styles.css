@@ -9,6 +9,15 @@ body {
     flex-direction: column;
     justify-content: space-between;
     min-height: 100vh;
+	
+}
+
+.banner {
+    display: block;
+    margin: 0 auto; /* 這將使圖片在水平方向上置中 */
+    width: 100%; /* 設置寬度為 100%，使其適應父容器的寬度 */
+    max-width: 1200px; /* 設置最大寬度，根據需要調整此值 */
+    height: auto; /* 自動調整高度，保持圖片的縱橫比 */
 }
 
 h1 {
