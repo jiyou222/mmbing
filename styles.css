@@ -22,11 +22,6 @@ h2 {
     color: #5a5a5a;
     margin-bottom: 30px;
 }
-h3 {
-    font-size: 1.2rem; /* 減小副標題大小 */
-    color: #5a5a5a;
-    margin-bottom: 30px;
-}
 
 .link-container {
     display: flex;
@@ -125,6 +120,36 @@ footer {
     height: auto;
     border-radius: 10px;
 }
+
+/* 會長介紹區域 */
+.leader-introduction {
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+    background-color: #faf3e0; /* 使用與 about-us 相同的背景色 */
+}
+
+.leader-introduction h3 {
+    font-size: 3rem;
+    color: #4a4a4a;
+    margin-bottom: 15px;
+}
+
+.leader-introduction p {
+    font-size: 1rem;
+    color: #6a6a6a;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+.leader-introduction img {
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 300px; /* 設置最大寬度 */
+    height: auto;
+    border-radius: 10px;
+}
+
 
 /* 里程碑區域 */
 .milestone {
