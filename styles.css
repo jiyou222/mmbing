@@ -20,6 +20,8 @@ body {
     height: auto; /* 自動調整高度，保持圖片的縱橫比 */
 }
 
+
+
 h1 {
     font-size: 5rem; /* 減小標題大小 */
     color: #4a4a4a;
@@ -83,7 +85,7 @@ h2 {
 }
 
 .link-item img {
-    width: 100%;
+    width: 30%;
     height: auto;
     border-radius: 10px;
     margin-bottom: 15px;
@@ -260,12 +262,21 @@ footer {
 }
 
 .gallery-row img {
-    width: 150px;
-    height: auto;
+    width: 350px;
+    height: 350px;
     margin: 0 10px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    object-fit: cover; /* 預覽時保持比例填滿容器 */
+    transition: transform 0.3s ease, object-fit 0.3s ease; /* 增加過渡效果 */
 }
+
+.gallery-row img:hover {
+    transform: scale(1.8); /* 滑鼠懸停時放大 */
+    object-fit: contain; /* 滑鼠懸停時顯示完整圖片 */
+}
+
+
 
 /* 針對小螢幕的調整 */
 @media (max-width: 600px) {
